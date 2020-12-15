@@ -115,6 +115,6 @@ const result = myFunctions.calcularResultadoPorOperacao(6,7,"+");
 console.log(result);
 */
 
-app.listen(port, () => {
+app.listen(process.env.PORT, () => {
     console.log(`Example app listening at http://localhost:${port}`)
   })
