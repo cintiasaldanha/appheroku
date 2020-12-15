@@ -117,6 +117,6 @@ console.log(result);
 */
 app.set("port", PORT);
 
-app.listen(process.env.PORT, () => {
+app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)
   })
