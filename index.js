@@ -6,6 +6,7 @@ var myFunctions = require("math-asd-of13");
 const express = require('express');
 const app = express()
 const port = 3003
+const PORT = process.env.PORT || '3003'
 
 
 //Get - utilizando parâmetros informados via querystring
@@ -114,6 +115,7 @@ app.post('/dividir/:x/:y', (req, res) => {
 const result = myFunctions.calcularResultadoPorOperacao(6,7,"+");
 console.log(result);
 */
+app.set("port", PORT);
 
 app.listen(process.env.PORT, () => {
     console.log(`Example app listening at http://localhost:${port}`)
